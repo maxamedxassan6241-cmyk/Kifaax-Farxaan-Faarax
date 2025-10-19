@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kifaah Farhaan Faarah — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;--card:#0b1220;--muted:#9aa6b2;--accent:#7dd3fc;
+      --glass: rgba(255,255,255,0.04);
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071029 0%, #081123 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1000px;margin:32px auto;padding:24px}
+
+    header{display:flex;gap:16px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:16px;flex:0 0 96px;background:linear-gradient(135deg,#0ea5e9,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;color:#071023;font-size:28px}
+    h1{margin:0;font-size:26px}
+    .subtitle{color:var(--muted);margin-top:6px;font-size:14px}
+
+    nav{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:10px;background:transparent;font-size:14px}
+    nav a:hover{background:var(--glass);color:var(--accent)}
+
+    main{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+    .about p{color:var(--muted);margin-top:10px}
+
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:8px;font-weight:600;font-size:13px;color:#dff6ff}
+
+    .projects{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px}
+    .proj{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02)}
+    .proj h4{margin:0 0 6px 0}
+    .proj p{margin:0;color:var(--muted);font-size:14px}
+    .proj a{display:inline-block;margin-top:10px;font-size:13px}
+
+    aside .contact-list{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+    .contact-item{background:var(--card);padding:10px;border-radius:8px;color:var(--muted)}
+
+    footer{text-align:center;color:var(--muted);margin-top:22px;font-size:13px}
+
+    /* responsive */
+    @media (max-width:900px){main{grid-template-columns:1fr} .avatar{width:80px;height:80px;font-size:24px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar"><img src="https://photos.google.com/photo/AF1QipNzYCU3WkWbZWWhGGQMnh0aY4c27W0vGBm9VGPD" alt=""></div>
+      <div>
+        <h1>Kifaah farhaan Faarah</h1>
+        <div class="subtitle">HTML &amp; CSS | Front-end Enthusiast</div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div id="about" class="card about">
+          <h2>About</h2>
+          <p>Hi — I'm <strong>Kifaah</strong>. I build clean, accessible web pages using semantic HTML and modern CSS. I focus on simplicity, responsive layouts, and readable code so others can learn from and reuse my work.</p>
+          <p>I'm learning new techniques every day and enjoy turning designs into working sites. Below are quick demos of what I can do.</p>
+
+          <div id="skills" style="margin-top:16px">
+            <h3>Key skills</h3>
+            <div class="skills">
+              <div class="skill">HTML5 (semantic)</div>
+              <div class="skill">CSS3 (Flexbox, Grid)</div>
+              <div class="skill">Responsive Design</div>
+              <div class="skill">Accessibility basics</div>
+              <div class="skill">Flexbox & Grid</div>
+            </div>
+          </div>
+
+          <div id="projects" style="margin-top:18px">
+            <h3>Projects</h3>
+            <div class="projects">
+              <article class="proj">
+                <h4>Simple Portfolio Site</h4>
+                <p>A one-page portfolio made with semantic HTML and CSS Grid. Includes responsive header and contact section.</p>
+                <a href="#">View code</a>
+              </article>
+
+              <article class="proj">
+                <h4>Landing Page (Clone)</h4>
+                <p>A responsive landing page that practices hero sections, cards, and responsive typography.</p>
+                <a href="#">View code</a>
+              </article>
+
+              <article class="proj">
+                <h4>CSS Components</h4>
+                <p>A small library of buttons, form fields, and cards that can be reused in other projects.</p>
+                <a href="#">View code</a>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Quick tips for polishing this site</h3>
+          <ul style="color:var(--muted)">
+            <li>Use real project links (GitHub or live demos).</li>
+            <li>Add a professional photo or a friendly avatar SVG.</li>
+            <li>Write short case studies for 1–2 projects.</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3 id="contact">Contact</h3>
+          <div class="contact-list">
+            <div class="contact-item"><strong>Email:</strong> kiphax@gmail.com</div>
+            <div class="contact-item"><strong>Phone:</strong> 0634133463</div>
+            <div class="contact-item"><strong>Location:</strong> Somalia</div>
+            <div class="contact-item"><strong>Follow:</strong> @kifaah (add your links)</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h3>Download</h3>
+          <p style="color:var(--muted)">Copy this single HTML file and open it in your browser. Edit the text to personalize your content.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Made with ❤️ — Kifaah Farhaan • Built with HTML &amp; CSS
+    </footer>
+  </div>
+</body>
+</html>
